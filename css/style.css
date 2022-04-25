@@ -1,0 +1,128 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  /* configuraciones globales */
+  body {
+      background-color: black;
+      
+  }
+  a {
+      color: azure;
+      text-decoration: none;
+  }
+  @media(max-width: 480px) {
+      nav a {
+         display: block; 
+        /* border-bottom: 2px solid azure; */
+        padding-bottom: 5px;
+        padding-top: 5px;
+
+      }
+  }
+  p {
+      color: azure;
+      max-width: 600px;
+  }
+  h2 {
+      color: azure;
+      font-size: 30px;
+  }
+  h3 {
+      color: azure;
+      font-size: 20px;
+  }
+  h1 {
+      color: #e50914;
+      /* font-family: 'Akshar', sans-serif; */
+  }
+  @media(max-width: 480px) {
+      h1 {
+          font-size: 40px;
+      }
+  }
+  
+  img {
+      width: 200px;
+  }
+  @media(max-width: 480px) {
+      img {
+          width: 300px;
+          margin-bottom: 20px;
+      }
+  }
+  .contenedor {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+  @media(max-width: 480px) {
+      .contenedor {
+          max-width: 350px;
+      }
+  }
+  .flex-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  @media(max-width: 480px) {
+      .flex-header {
+          flex-direction: column;
+      }
+  }
+  nav {
+      display: flex;
+      width: 600px;
+      justify-content: space-between;
+      align-items: center;
+      margin: 20px 0;
+  }
+  @media(max-width: 480px) {
+      nav {
+          flex-direction: column;
+          width: 350px;
+          height: 150px;
+          margin: 0;
+          margin-bottom: 30px;
+      }
+  }
+  .hero {
+      display: block;
+      height: 600px;
+     background:linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/backdrop.jpg);
+     background-position: center center; 
+     background-size: cover;
+  }
+  .info-pelicula {
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+  }
+  .botones {
+      display: flex;
+      margin-top: 30px;
+  }
+  .boton {
+      background-color: grey;
+      padding: 10px 25px;
+      margin: 0 30px;
+      border-radius: 20px;
+  }
+  .pasarela {
+     display: flex;
+     margin-bottom: 80px;
+  }
+  @media(max-width: 480px) {
+     .pasarela {
+         flex-direction: column;
+         align-items: center;
+     }
+  }
+  .margen-top {
+      margin-top: 50px;
+  }
